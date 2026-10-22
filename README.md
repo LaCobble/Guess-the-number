@@ -8,12 +8,12 @@
 A Tkinter "higher or lower" game with three difficulty levels and a scoreboard saved to an Excel file, built under a two-hour time limit.
 
 <p align="center">
-  <img src="https://github.com/LaCobble/Guess-the-number/assets/71151090/178403b6-793a-4b31-8592-ebe187dc04a2" width="40%" alt="Guess the Number main window">
+  <img src="docs/images/1-menu.webp" alt="Guess the Number main menu">
 </p>
 
 ## What it does
 
-The game picks a random number and you have to find it, with "higher" or "lower" as the only hints. The faster you find it, the better your score.
+The game picks a random number and you have to find it: type a guess and press **Lire** (read). The hint, "plus grand" (higher) or "plus petit" (lower), is printed in the terminal the game was started from. The faster you find the number, the better your score.
 
 | Level  | Number to find                         |
 |--------|----------------------------------------|
@@ -22,6 +22,29 @@ The game picks a random number and you have to find it, with "higher" or "lower"
 | Hard   | a decimal from 0.01 to 9,999.99        |
 
 When you win, you enter a name and your time is stored in `classement.xlsx`, one sheet per level. The **Classement** (scoreboard) button shows the saved scores for each level.
+
+## Screenshots
+
+Captured on Linux (Xvfb) by running the real program and pressing its buttons; window titles are not shown. The fixed window sizes come from the original code.
+
+<table>
+  <tr>
+    <td width="50%" align="center"><img src="docs/images/1-menu.webp" alt="Main menu"></td>
+    <td width="50%" align="center"><img src="docs/images/2-game.webp" alt="Game window with a guess typed in"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Main menu: scoreboard and the three levels</sub></td>
+    <td align="center"><sub>Game window: type a guess and press <b>Lire</b></sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/images/4-win.webp" alt="Win window with the time"></td>
+    <td align="center"><img src="docs/images/5-scoreboard.webp" alt="Easy scoreboard read from classement.xlsx"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Number found: name entered, time displayed</sub></td>
+    <td align="center"><sub>Easy scoreboard, read back from <code>classement.xlsx</code></sub></td>
+  </tr>
+</table>
 
 ## Getting started
 
