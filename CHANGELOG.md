@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- The win window opens again: `main()` now declares the main window `global`. Since the code was moved into `main()`, finishing a game failed with `NameError: name 'fenetre' is not defined`.
 - README: Tkinter is not installed with `pip`, and the script name is `Guess the number.py`.
 
 ## [1.0.0] - 2022-03-17
